@@ -406,8 +406,10 @@ h6 {
 	font-size: 23.5vw;
 	font-weight: 900;
   line-height: .625;
-  margin: 0 auto 0.15em auto;
-  padding: 0 0 0.1em 0;
+  margin: 0 auto 0 auto; 
+  overflow: hidden;
+  padding: 0 0 0.15em 0;
+  position: relative;
   text-align: center;
 	text-transform: uppercase;
 }
@@ -425,6 +427,12 @@ h6 {
 	font-size: 30.75vw;
 }
 
+.section-name-image {
+	position: absolute;
+	right: 12vw;
+	bottom: -0.15em;
+	width: 15vw;
+}
 	@media only screen and (min-width: 43.75em) {
 	  .section-name.opinion {
 		    font-size: 18.5vw;

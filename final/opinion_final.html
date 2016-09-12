@@ -1,0 +1,235 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+		<title>About | James Davidson Portfolio Site</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/setup.min.css">
+    <link rel="stylesheet" href="css/styles_final.css">
+    <link rel="stylesheet" href="../css/webfonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:900|UnifrakturCook:700" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="../js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/vendor/fontfaceobserver.js"></script>
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('Alegreya', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontB = new FontFaceObserver('Alegreya', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontC = new FontFaceObserver('Alegreya', {
+							weight: 900,
+							style: 'normal'
+						});
+					var fontD = new FontFaceObserver('Alegreya', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('Alegreya', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontF = new FontFaceObserver('Alegreya Sans', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontG = new FontFaceObserver('Alegreya Sans', {
+							weight: 900,
+							style: 'normal'
+						});
+						
+			
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+        
+    </head>
+    <body>
+        		<!-- BEGIN web font toggle -->
+        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
+				<style>
+					.button {
+					  font-size: 14px;
+					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+					  text-decoration: none;
+					  font-weight: bold;
+					  color: #383838;
+					  background-color: #fefafa;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
+					  background-image: linear-gradient(#ffffff, #ede9e9);
+					  padding: 0.25em;
+					  border-radius: 0.5em;
+					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					}
+					.button:hover {
+					  background-color: #e4e1e1;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					}
+					.toggle-fonts {
+					  position: fixed; 
+					  top: 0.5em; 
+					  right: 0.5em; 
+					  z-index: 999;
+					}
+					.toggle-fonts.on:after {
+					  content: ": on";
+					}
+					.toggle-fonts.off:after {
+					  content: ": off";
+					}
+				</style>
+				
+
+				<script>
+					if (!'classList' in document.createElement('span')) {
+			            document.getElementById('c-unsupported').classList.remove('hidden');
+			            document.getElementById('execute').setAttribute('disabled', 'disabled');
+			         } else {
+			            document.getElementById('toggle-fonts').addEventListener('click', function() {
+							document.getElementById('toggle-fonts').classList.toggle('on');
+							document.getElementById('toggle-fonts').classList.toggle('off');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+			        	});
+         			}
+         		</script>
+
+        		<!-- END web font toggle -->
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+			        <h1 class="paper-name"><a href="index_final.html" title="Return to Home Page">The Daily News</a></h1>
+		        </div>
+	        </div>
+        </header>
+		<nav role="navigation" class="nav clearfix main-nav" id="nav">
+			<a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
+			<div class="main-nav-inner">
+				<ul class="nav-menu">
+					<li class="menu-item"><a href="index_final.html">Home</a></li>
+					<li class="menu-item"><a href="money_final.html">Money</a></li>
+					<li class="menu-item"><a href="sport_final.html">Sport</a></li>
+					<li class="menu-item"><a href="opinion_final.html">Opinion</a></li>
+				</ul><!--/.nav-menu-->
+			</div>
+		</nav>
+
+
+        <main class="content-area clearfix">
+		      <div class="section-name opinion">Opinion</div>
+		      <div class="section-name money">Money</div>
+		      <div class="section-name sport">Sport</div>
+	        <div class="section-content">
+		        <article>
+			        <header>
+				        <h1>Bridget Jones is a glorious emissary from a better age</h1>
+								<h2>Feckless, funny and sex-positive, Ms Jones shows us how punitive today’s politics has become</h2>
+			        </header>
+			        <footer><span itemprop="name">Zoe Williams</span></footer>
+					    	<p>Trying to hate the third Bridget Jones film is like trying to sulk while a toddler is tickling you: if it’s hard to take against Renée Zellweger in any guise, it’s simply not viable when she’s lip-syncing to House of Pain. As she paces round her yard of failures, and ends “at least I’m finally thin,” it’s hard to take against that too. Comic talent leaps from the screen like frogs out of a box. Why was I even trying to hate it? Because it was Bridget Jones, and in the 1990s, that’s what we did.</p>
+					    	<p>Before the first film we complained about the column, then the book, on feminist grounds. Finally, a character had arrived who didn’t embody a prissy femininity of self-control, but in its place was a constant hum of trivia and calories and incompetence. She couldn’t do anything. She couldn’t make soup, she couldn’t stay upright, she had all the agency and independence of a gosling, she was always at her most loveable when she was showing her knickers. It was as though there was so much fear in rejecting the classic female ideal of decorum that we had to crawl on our hands and knees to be accepted some other way. Inconveniently, she was often very funny. But funny could wait until we’d smashed the patriarchy. That was wrong. No, let me try that again. I was wrong. The self-abasement and the humour were inextricable, and contained a subtle liberation that it was a big mistake to undervalue. Big mistake, to quote another politically problematic but deceptively important film: huge.</p>
+					    	<p>The first Bridget Jones film came out in 2001, by which time there was a kind of meta-disapproval for Zellweger, as the envoy of US body fascism trying to ape British slatternliness. How can you tear down the cultural constraint of female perfectionism with a heroine who battles constantly with her thighs and drinks wine in pints, and not at least check first whether or not Kate Winslet is available? The distinction between herself as an actor and herself qua casting decision seemed lost on Zellweger, who was extremely vexed at the column inches devoted to her appearance, and has remained so. In retrospect, I can see why. It’s hard not to take things personally when they’re literally all about your person.</p>
+					    	<p>But seeing the third film makes me realise how much there is to miss about the 1990s politically. Bridget is now 43, and gets accidentally pregnant after two one-night stands, too close together to figure out whose child it is. I probably just about have it in me not to say who the father is, between Colin Firth’s Mark and Patrick Dempsey’s Jack, but otherwise take it as read that this piece will be riddled with spoilers.</p>
+					    	<p>Immediately, the film made me miss sex-positive feminism. There was a time, towards the end of the last century, when we rejected the word “slut” not because it was victim-blaming but because there was no victim. The charge of sluttishness simply made no sense. A woman might choose to get drunk and have sex with a stranger, and it might not be a cry for help or a violation, it might not have meaning, she might not have low self-esteem, she might just feel like it.</p>
+					    	<p>She might be charting the exhilarating waters of her own sexual destiny or she might just be passing the time. She couldn’t be made to feel ashamed, not because the Daily Mail didn’t try, but because shame is a two-way street and she didn’t have it in her. Sex didn’t have to be a transaction, with a winner and a loser (or two losers), as it is in Girls; it didn’t even have to be an idealised transaction resulting in mutually satisfied participants, in the manner of Sex and the City. It could exist entirely outside the framework of investment and return, use and exploitation, in the space we used to call life.</p>
+					    	<p>I miss the jokes. At one point in Bridget Jones’s Baby, Bridget’s gay friend announces he’s adopting, and says: “We’re having a baby. A gayby”. That joke could only be made because it was seeded in a more ludic time. You wouldn’t write that in a story first conceived today, because someone would think it infantilised same sex relationships, and someone else would think it implied that gay parents tried to preach homosexuality to their children, and some other someone would think it sexualised babies.</p>
+					    	<p>Which may not sound like a huge loss, because it’s just a piece of silly wordplay, but it is a loss: the ability to take a joke is a fundamental, perhaps defining, component of social legitimacy and confidence. When we all have to be as sensitive as our most sensitive ally, we cram into an ever tighter cultural corner, pearl-clutching, offence-taking, acting out the humourlessness of which liberals were always mischievously accused.</p>
+					    	<p>And I miss Emma Thompson; or rather, I miss the kinds of roles for which only Emma Thompson will do, caustic, intelligent, sceptical, warm. Try to imagine Theresa May explaining to Emma Thompson why she needed grammar schools, or a van telling immigrants to go home or face arrest; it’s really enjoyable.</p>
+					    	<blockquote>The ability to take a joke is a fundamental, perhaps defining, component of social legitimacy and confidence.</blockquote>
+					    	<p>More than any of that, I miss fecklessness, the ability to accept error as part of the human condition, without trying to stratify it by class or gender and write it off as the kind of thing only undesirable people are capable of. What contemporary political narrative would Bridget Jones fit into, in her current situation? She’s not a scrounger; she’s not a troubled family; she’s not a benefits cheat. (She probably is, for a time, a drain on the NHS.)</p>
+					    	<p>But nor is she a hard-working family, or a striver. She’s not having a baby because she planned it, or can afford it, or has a brilliant maternity package, or lives near an outstanding primary school. She couldn’t begin to justify her decision, couldn’t even dignify it with the word, it’s more of a happenstance. She doesn’t match any of the criteria of a decent citizen in our current politics; but that’s a fault in the politics, which is kept afloat by a po-faced self-righteousness that can’t brook a joke in case empathy and fellowship come rushing in alongside it.</p>
+					    	<p>The real work of building a “country that works for all” consists not of standing greyly by and intoning it, but of being able to see a person in wildly inauspicious circumstances, entirely of their own making, and feeling for them; knowing it could be you; wanting to help. That was the subversive element of Bridget Jones – her every pratfall built a deeper collective bond and made a narrow, judgmental, me-first worldview more absurd, more laughable, more impossible to maintain. She returns, like Batman, just when we need her most.</p>
+		        </article>
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-contact h-card">
+		        	<p><strong class="name p-name">James Davidson</strong><br />
+		        	User Experience Designer</p>
+		        	<p>e: <a href="mailto:#" class="u-email">james@davidson.design</a><br />
+		        	m: <span class="p-tel">401.555.1212</span></p>
+	        	</div>
+				<nav id="nav-footer" class="nav-footer" role="navigation">
+					<ul>
+						<li><a href="index_final.html">Home</a></li>
+						<li><a href="about_final.html">About</a></li>
+						<li><a href="resume_final.html">Resume</a></li>
+						<li><a href="portfolio_final.html">Portfolio</a></li>
+						<li><a href="contact_final.html">Contact</a></li>
+					</ul>
+				</nav><!--/.nav-footer-->
+				<div class="footer-social-links">
+					<ul>
+						<li><a href="http://www.linkedin.com"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+						<li><a href="http://twitter.com"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+						<li><a href="http://github.com"><i class="fa fa-github-square"></i> Github</a></li>
+						<li><a href="http://instagram.com"><i class="fa fa-instagram"></i> Instagram</a></li>
+					</ul>
+				</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <script src="../js/vendor/jquery-1.12.0.min.js" defer></script>
+    <script src="../js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="../js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="../js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="../js/main.js" defer></script>
+
+    </body>
+</html>

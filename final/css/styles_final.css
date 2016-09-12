@@ -39,7 +39,7 @@ Gray: #494949;
 Fonts: 
 
 Serif: "Alegreya", Georgia, "New Times Roman", serif;
-Sans-serif: "Alegreya Sans", Helvetica, Arial, sans-serif;
+Sans-serif: "Fira Sans", Helvetica, Arial, sans-serif;
 
 
 */
@@ -61,7 +61,7 @@ th,
 td, 
 ul, 
 li {
-	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -139,7 +139,7 @@ p {
         hyphens: auto;
 }
 .wf-inactive p {
-	font-family: Georgia, "New Times Roman", serif;
+	font-family: Helvetica, Arial, sans-serif;
 	font-size: 0.975em;
 	letter-spacing: -0.4px;
 	line-height: 1.5;
@@ -401,6 +401,76 @@ h6 {
 	}
 
 
+.section-name {
+	font-family: Kanit, "Arial Black", sans-serif;
+	font-size: 23.5vw;
+	font-weight: 900;
+  line-height: .625;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+	text-transform: uppercase;
+}
+
+.section-name.opinion {
+	color: #3875a1;
+	font-size: 23.5vw;
+}
+.section-name.money {
+	color: #8d9a91;
+	font-size: 27.75vw;
+}
+.section-name.sport {
+	color: #a0ae57;
+	font-size: 30.75vw;
+}
+
+	@media only screen and (min-width: 43.75em) {
+	  .section-name.opinion {
+		    font-size: 18.5vw;
+		}
+	  .section-name.money {
+		    font-size: 21.85vw;
+		}
+	  .section-name.sport {
+		    font-size: 24.25vw;
+		}
+	}
+	@media only screen and (min-width: 56.25em) {
+	  .section-name.opinion {
+		    font-size: 17.75vw;
+		}
+	  .section-name.money {
+		    font-size: 21vw;
+		}
+	  .section-name.sport {
+		    font-size: 23.25vw;
+		}
+	}
+	@media only screen and (min-width: 71.875em) {
+	  .section-name.opinion {
+		    font-size: 17vw;
+		}
+	  .section-name.money {
+		    font-size: 20.1vw;
+		}
+	  .section-name.sport {
+		    font-size: 22.25vw;
+		}
+	}
+	@media only screen and (min-width: 81.25em) {
+	  .section-name.opinion {
+		    font-size: 16.5vw;
+		}
+	  .section-name.money {
+		    font-size: 19.5vw;
+		}
+	  .section-name.sport {
+		    font-size: 21.75vw;
+		}
+	}
+
+
 /* ==========================================================================
    Layout
    ========================================================================== */
@@ -574,14 +644,14 @@ input[type="submit"] {
 /* header styles */
 #banner {
 	background-size: 1em 1em;
-	background-color: #DC5705;
-	background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	background-color: #a1a1a1;
+	background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
 	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
 	                  transparent 75%, transparent);
-	background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	background-image: -moz-linear-gradient(-90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
 	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
 	                  transparent 75%, transparent);
-	background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
 	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
 	                  transparent 75%, transparent);
 	color: #ffffff;
@@ -592,33 +662,15 @@ input[type="submit"] {
 
 .branding {
 	margin: 0;
-	padding: 1em 0;
-}
-.home .branding {
-	text-align: center;
+	padding: 0.25em 0;
 }
 
-#logo {
-	float: left;
-	margin: 0 1em 0 0;	
-	width: 5em;
-}
-	@media only screen and (min-width: 56.25em) {
-	    #logo {
-		    margin-left: -8em;
-		    width: 7em;
-	    }
-	}
-
-.home #logo {
-	float: none;
-	margin: 1.5em auto;
-}
 .branding h1 {
 	color: #ffffff;
-	font-size: 2em;
+	font-family: UnifrakturCook, Georgia, serif;
+	font-size: 4em;
 	margin: 0;
-	margin-top: 0.5em;
+	margin-top: 0;
 }
 .branding h1 a:link, 
 .branding h1 a:visited {
@@ -630,18 +682,10 @@ input[type="submit"] {
 .branding h1 a:hover, 
 .branding h1 a:focus {
 	color: #ffffff; 
-	text-decoration: underline;
+	text-decoration: none;
+	text-shadow: 0px 1px 1px rgba(90,205,81,1);
 }
 
-.branding h2 {
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
-	font-style: italic;
-	font-weight: normal;
-	margin: 0;
-}
-.home .branding h2 {
-	max-width: none;
-}
 /* /header styles */
 
 /* navigation styles */
@@ -756,15 +800,15 @@ body:before {
 	@media screen and (min-width: 43.75em) {
 		.main-nav-inner {
 			background-color: #B7D0E8;
-			background: -moz-linear-gradient(top, #B7D0E8 0%, #8BB1DD 100%);
-			background: -webkit-linear-gradient(top, #B7D0E8 0%,#8BB1DD 100%);
-			background: linear-gradient(to bottom, #B7D0E8 0%,#8BB1DD 100%);
+			background: -moz-linear-gradient(top, #8d969e 0%, #66727d 100%);
+			background: -webkit-linear-gradient(top, #8d969e 0%,#66727d 100%);
+			background: linear-gradient(to bottom, #8d969e 0%,#66727d 100%);
 			-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 			-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 			display: block;
 			left: 0;
-			margin: -0.25em auto 0 auto;
+			margin: -0.5em auto 0.5em auto;
 			float: none;
 			padding: 0; 
 			position: relative;
@@ -869,8 +913,8 @@ body:before {
 	@media only screen and (min-width: 43.75em) {
 	    .menu-item > a {
 			border-bottom: 0;
-			border-left: solid 1px #8BB1DD;
-			border-right: solid 1px #B7D0E8;
+			border-left: solid 1px #8d969e;
+			border-right: solid 1px #66727d;
 		    font-size: 1.25em;
 			padding: 0.25em 1em 0.15em 1em; 
 			text-align: center;

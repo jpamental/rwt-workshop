@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
     <head>
 
-		<title>Opinion: Bridget Jones's Baby | The Daily News</title>
+		<title>Sport: Bridget Jones's Baby | The Daily News</title>
 		
 		<link rel="dns-prefetch" href="//ajax.googleapis.com">
 		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
@@ -66,17 +66,21 @@
 							weight: 700,
 							style: 'italic'
 						});
-					var fontG = new FontFaceObserver('Kanit', {
+					var fontG = new FontFaceObserver('Alegreya', {
 							weight: 900,
 							style: 'normal'
 						});
-					var fontH = new FontFaceObserver('UnifrakturCook', {
+					var fontH = new FontFaceObserver('Kanit', {
+							weight: 900,
+							style: 'normal'
+						});
+					var fontI = new FontFaceObserver('UnifrakturCook', {
 							weight: 700,
 							style: 'normal'
 						});
 						
 			
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
 						document.documentElement.classList.remove("wf-inactive");
 						document.documentElement.classList.add("wf-active");
 			
@@ -166,9 +170,7 @@
 
 
         <main class="content-area clearfix">
-		      <div class="section-name opinion">Opinion</div>
-		      <!--0<div class="section-name money">Money</div>
-		      <div class="section-name sport">Sport</div>-->
+		      <div class="section-name sport">Sport</div>
 	        <div class="section-content border-top">
 		        <article class="article-detail">
 			        <header>

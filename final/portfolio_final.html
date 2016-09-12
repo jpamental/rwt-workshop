@@ -1,0 +1,275 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+		<title>Portfolio | James Davidson Portfolio Site</title>
+		
+		<link rel="dns-prefetch" href="//ajax.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
+
+		<!-- meta -->
+		<meta charset="utf-8">
+    <meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta http-equiv="cleartype" content="on">
+
+		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="../favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <link rel="stylesheet" href="../css/setup.min.css">
+    <link rel="stylesheet" href="css/styles_final.css">
+    <link rel="stylesheet" href="../css/webfonts.css">
+		<!--[if lt IE 9]>
+			<script src="../js/vendor/respond.min.js"></script>
+		<![endif]-->
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/vendor/fontfaceobserver.js"></script>
+		<script type="text/javascript">
+				(function() {
+					document.documentElement.className += " wf-inactive"; 
+			
+					// Optimization for Repeat Views
+					if( sessionStorage.foutFontsLoaded ) {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+						return;
+					}
+			
+					var fontA = new FontFaceObserver('Alegreya', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontB = new FontFaceObserver('Alegreya', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontC = new FontFaceObserver('Alegreya', {
+							weight: 900,
+							style: 'normal'
+						});
+					var fontD = new FontFaceObserver('Alegreya', {
+							weight: 400,
+							style: 'italic'
+						});
+					var fontE = new FontFaceObserver('Alegreya', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontF = new FontFaceObserver('Alegreya Sans', {
+							weight: 400,
+							style: 'normal'
+						});
+					var fontG = new FontFaceObserver('Alegreya Sans', {
+							weight: 900,
+							style: 'normal'
+						});
+						
+			
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load()]).then(function () {
+						document.documentElement.classList.remove("wf-inactive");
+						document.documentElement.classList.add("wf-active");
+			
+						// Optimization for Repeat Views
+						sessionStorage.foutFontsLoaded = true;
+					});
+				})();
+			</script>
+    </head>
+    <body>
+        		<!-- BEGIN web font toggle -->
+        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
+				<style>
+					.button {
+					  font-size: 14px;
+					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+					  text-decoration: none;
+					  font-weight: bold;
+					  color: #383838;
+					  background-color: #fefafa;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
+					  background-image: linear-gradient(#ffffff, #ede9e9);
+					  padding: 0.25em;
+					  border-radius: 0.5em;
+					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					}
+					.button:hover {
+					  background-color: #e4e1e1;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
+					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					}
+					.toggle-fonts {
+					  position: fixed; 
+					  top: 0.5em; 
+					  right: 0.5em; 
+					  z-index: 999;
+					}
+					.toggle-fonts.on:after {
+					  content: ": on";
+					}
+					.toggle-fonts.off:after {
+					  content: ": off";
+					}
+				</style>
+				
+
+				<script>
+					if (!'classList' in document.createElement('span')) {
+			            document.getElementById('c-unsupported').classList.remove('hidden');
+			            document.getElementById('execute').setAttribute('disabled', 'disabled');
+			         } else {
+			            document.getElementById('toggle-fonts').addEventListener('click', function() {
+							document.getElementById('toggle-fonts').classList.toggle('on');
+							document.getElementById('toggle-fonts').classList.toggle('off');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
+							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
+			        	});
+         			}
+         		</script>
+
+        		<!-- END web font toggle -->
+
+        <!-- Add your site or application content here -->
+        <header role="banner" class="banner clearfix" id="banner">
+	        <div class="section-content">
+		        <div class="branding clearfix">
+			        <figure id="logo"><a href="index_final.html" title="Return to Home Page"><img src="../img/logo.png" alt="my logo" /></a></figure>
+			        <h1><a href="index_final.html" title="Return to Home Page">James Davidson</a></h1>
+			        <h2>user experience designer</h2>
+		        </div>
+	        </div>
+        </header>
+		<nav role="navigation" class="nav clearfix main-nav" id="nav">
+			<a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
+			<div class="main-nav-inner">
+				<ul class="nav-menu">
+					<li class="menu-item"><a href="about_final.html">About</a></li>
+					<li class="menu-item"><a href="resume_final.html">Resume</a></li>
+					<li class="menu-item"><a href="portfolio_final.html">Portfolio</a>
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="portfolio_project1_final.html">Project 1</a></li>
+							<li class="menu-item"><a href="portfolio_project2_final.html">Project 2</a></li>
+							<li class="menu-item"><a href="portfolio_project3_final.html">Project 3</a></li>
+							<li class="menu-item"><a href="portfolio_project4_final.html">Project 4</a></li>
+							<li class="menu-item"><a href="portfolio_project5_final.html">Project 5</a></li>
+							<li class="menu-item"><a href="portfolio_project6_final.html">Project 6</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a href="contact_final.html">Contact</a></li>
+				</ul><!--/.nav-menu-->
+			</div>
+		</nav>
+
+
+        <main class="content-area clearfix">
+	        <div class="section-content">
+		        <h1>Portfolio</h1>
+		    	<p>A selection of my work</p>
+		    	
+		    	<div class="card-grouping thirds">
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<a href="portfolio_project1_final.html"><img src="../img/portfolio/robohead.png" alt="Vitamin T website home page" /></a>
+			    		<figcaption><a href="portfolio_project1_final.html">Robohead Website</a></figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design</p>
+		    	</article>
+
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<img src="../img/portfolio/vitamin-t.png" alt="Vitamin T website home page" />
+			    		<figcaption>Vitamin T Website With a Longer Title</figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design, Front-end Coding</p>
+		    	</article>
+
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<img src="../img/portfolio/shareist.png" alt="Vitamin T website home page" />
+			    		<figcaption>Shareist Website</figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design, Front-end Coding</p>
+		    	</article>
+
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<img src="../img/portfolio/shareist.png" alt="Vitamin T website home page" />
+			    		<figcaption>Shareist Website</figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design, Front-end Coding</p>
+		    	</article>
+
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<img src="../img/portfolio/robohead.png" alt="Vitamin T website home page" />
+			    		<figcaption>Robohead Website</figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design</p>
+		    	</article>
+
+		    	<article class="card portfolio-entry">
+			    	<figure>
+			    		<img src="../img/portfolio/vitamin-t.png" alt="Vitamin T website home page" />
+			    		<figcaption>Vitamin T Website</figcaption>
+			    	</figure>
+			    	<p class="roles">UX Design, Front-end Coding</p>
+		    	</article>
+
+		    	</div>
+
+	        </div><!--/.section-content-->
+        </main>
+        <footer id="footer" class="footer clearfix" role="contentinfo">
+	        <div class="section-content">
+	        	<div class="footer-contact h-card">
+		        	<p><strong class="name p-name">James Davidson</strong><br />
+		        	User Experience Designer</p>
+		        	<p>e: <a href="mailto:#" class="u-email">james@davidson.design</a><br />
+		        	m: <span class="p-tel">401.555.1212</span></p>
+	        	</div>
+				<nav id="nav-footer" class="nav-footer" role="navigation">
+					<ul>
+						<li><a href="index_final.html">Home</a></li>
+						<li><a href="about_final.html">About</a></li>
+						<li><a href="resume_final.html">Resume</a></li>
+						<li><a href="portfolio_final.html">Portfolio</a></li>
+						<li><a href="contact_final.html">Contact</a></li>
+					</ul>
+				</nav><!--/.nav-footer-->
+				<div class="footer-social-links">
+					<ul>
+						<li><a href="http://www.linkedin.com"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+						<li><a href="http://twitter.com"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+						<li><a href="http://github.com"><i class="fa fa-github-square"></i> Github</a></li>
+						<li><a href="http://instagram.com"><i class="fa fa-instagram"></i> Instagram</a></li>
+					</ul>
+				</div>
+	        </div><!--/.section-content-->
+        </footer>
+
+
+
+
+    <script src="../js/vendor/jquery-1.12.0.min.js" defer></script>
+    <script src="../js/plugins.js" defer></script>
+
+    <!-- Widowtamer -->
+    <script src="../js/vendor/widowtamer-min.js" defer></script>
+
+    <!-- classList polyfill -->
+    <script src="../js/vendor/classlist_polyfill.min.js" defer></script>
+
+    <script src="../js/main.js" defer></script>
+
+    </body>
+</html>

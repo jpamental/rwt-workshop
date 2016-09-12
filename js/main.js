@@ -31,6 +31,13 @@ wt.fix({
 	event: 'resize'
 });
 
+wt.fix({
+	elements: 'h1',
+	chars: 6,
+	method: 'nbsp',
+	event: 'resize'
+});
+
 
 /* Navigation functions */
 

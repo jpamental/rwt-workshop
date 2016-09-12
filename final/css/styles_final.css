@@ -1290,7 +1290,7 @@ blockquote {
 	line-height: 1.4em; 
 	font-family: "Alegreya", Georgia, "Times New Roman"; 
 	font-style: italic; 
-	font-weight: 700;
+	font-weight: bold;
 	position: relative;
 }
 
@@ -1318,10 +1318,21 @@ blockquote:after {
 		
 		blockquote {
 			font-size: 1.5em; 
-			width: 50%;
-			margin: 0 0 1em 0; 
+			font-weight: normal;
+			margin: 0 auto 1em auto; 
+			position: relative;
+			width: 75%;
 		}
+		blockquote:before {
+			left: -0.5em;
+		    
+		}	
 		
+		blockquote.left, 
+		blockquote.right {
+			font-weight: bold;		
+			width: 50%;
+		}
 		blockquote.left {
 			float: left; 
 			margin-right: 3.5%;
@@ -1336,7 +1347,8 @@ blockquote:after {
 			padding-right: 1em;
 		}
 		
-		blockquote:before {
+		blockquote.left:before, 
+		blockquote.right:before {
 			left: -0.1em;
 		    
 		}	
@@ -1345,7 +1357,7 @@ blockquote:after {
 /* END BLOCKQUOTE styles */
 
 /* Initial Cap styles */
-.article-detail p:first-of-type:first-letter {
+.article-detail.initial p:first-of-type:first-letter {
 	font-size: 4em; 
 	font-family: "Alegreya", Georgia, "Times New Roman";
 	line-height: 0.9em; 
@@ -1354,7 +1366,7 @@ blockquote:after {
 	
 }
 
-.lt-ie9 .article-detail footer + p:first-letter {
+.lt-ie9 .article-detail.initial footer + p:first-letter {
     font-size: 4em; 
     font-family: "Alegreya", Georgia, "Times New Roman";
 	line-height: 0.9em; 
@@ -1362,10 +1374,10 @@ blockquote:after {
 	padding-right: 0.15em; 	
 }
 	@media screen and (min-width: 43.75em) { 
-		.article-detail p:first-of-type:first-letter { 
+		.article-detail.initial p:first-of-type:first-letter { 
 			font-size: 5em;
 		}
-		.lt-ie9 .article-detail footer + p:first-letter { 
+		.lt-ie9 .article-detail.initial footer + p:first-letter { 
 			font-size: 5em;
 		}
 	}
@@ -1374,6 +1386,41 @@ blockquote:after {
 p.first-line:first-line {
 	font-size: 1.1em;
 	font-weight: bold;
+}
+
+/* stocks container */
+.stocks-container {
+	float: left;
+	margin-left: -5em;
+	margin-right: 1em;
+	width: 7em;
+}
+	@media screen and (min-width: 43.75em) { 
+		.stocks-container {
+			margin-left: -3em;
+		}
+	}
+
+.stocks-stock {
+	border-top: solid 1px #a1a1a1;
+	margin-bottom: 0.75em;
+	padding-top: 0.25em;
+}
+.stocks-name {
+	font-weight: bold;
+}
+.stocks-icon {
+	display: block; 
+	float: left;
+	height: 1em;
+	margin-top: -0.1em;
+	overflow: hidden;
+	width: 1em;
+}
+.stocks-closed {
+	color: #a1a1a1;
+	font-size: 0.875em;
+	font-style: italic;
 }
 
 /* /content area styles */

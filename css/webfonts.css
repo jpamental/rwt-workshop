@@ -10,6 +10,7 @@
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.svg#FiraSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* fira-sans-italic - latin */
 @font-face {
@@ -23,6 +24,7 @@
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-italic.svg#FiraSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* fira-sans-700 - latin */
 @font-face {
@@ -36,6 +38,7 @@
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700.woff') format('woff'), /* Modern Browsers */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700.svg#FiraSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* fira-sans-700italic - latin */
 @font-face {
@@ -49,14 +52,7 @@
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-700italic.svg#FiraSans') format('svg'); /* Legacy iOS */
-}
-
-@font-face {
-  font-family: "Fira Sans";
-  src: url('../fonts/FiraSans/FiraSans-BoldItalic.eot');
-  src: url('../fonts/FiraSans/FiraSans-BoldItalic.eot?#iefix') format('eot'), url("../fonts/FiraSans/FiraSans-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
+  font-display: swap;
 }
 
 /* kanit-900 - latin */
@@ -71,6 +67,7 @@
        url('../fonts/kanit-v1-latin/kanit-v1-latin-900.woff') format('woff'), /* Modern Browsers */
        url('../fonts/kanit-v1-latin/kanit-v1-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/kanit-v1-latin/kanit-v1-latin-900.svg#Kanit') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* unifrakturcook-700 - latin */
@@ -85,6 +82,7 @@
        url('../fonts/unifrakturcook-v8-latin/unifrakturcook-v8-latin-700.woff') format('woff'), /* Modern Browsers */
        url('../fonts/unifrakturcook-v8-latin/unifrakturcook-v8-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/unifrakturcook-v8-latin/unifrakturcook-v8-latin-700.svg#UnifrakturCook') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* alegreya-700 - latin */
@@ -99,6 +97,7 @@
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700.woff') format('woff'), /* Modern Browsers */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700.svg#Alegreya') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* alegreya-700italic - latin */
 @font-face {
@@ -112,6 +111,7 @@
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700italic.woff') format('woff'), /* Modern Browsers */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-700italic.svg#Alegreya') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 /* alegreya-900 - latin */
 @font-face {
@@ -125,5 +125,6 @@
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-900.woff') format('woff'), /* Modern Browsers */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/alegreya-v7-latin/alegreya-v7-latin-900.svg#Alegreya') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 

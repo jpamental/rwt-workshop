@@ -1624,30 +1624,15 @@ figcaption {
   @media (min-width: 43.75em) {
     figcaption.right-side {
       position: absolute;
-      right: -35%;
-      top: 42%;
-      width: 53%;
+      left: 100%;
+      top: 100%;
+      width: 55%;
       -moz-transform: rotate(-90deg);
       -webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg); } }
-  @media (min-width: 48em) {
-    figcaption.right-side {
-      right: -30.5%;
-      top: 49%;
-      width: 53%;
-  @media (min-width: 56.25em) {
-    figcaption.right-side {
-      right: -31%;
-      top: 48%; } }
-  @media (min-width: 71.875em) {
-    figcaption.right-side {
-      right: -31%;
-      top: 49%; } }
-  @media (min-width: 81.25em) {
-    figcaption.right-side {
-      right: -31%;
-      top: 48%; 
-      width: 55%; } }
+      transform: rotate(-90deg);
+      transform-origin: 0 0; 
+    } 
+  }
 
 /* /figure styles */
 

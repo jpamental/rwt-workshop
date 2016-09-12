@@ -406,8 +406,8 @@ h6 {
 	font-size: 23.5vw;
 	font-weight: 900;
   line-height: .625;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 auto 0.15em auto;
+  padding: 0 0 0.1em 0;
   text-align: center;
 	text-transform: uppercase;
 }
@@ -509,6 +509,9 @@ h6 {
 	    }
 	}
 
+.section-content.border-top {
+	border-top: double 3px #a1a1a1;
+}
 .content-area {
 	clear: both;
 }
@@ -600,7 +603,7 @@ input[type="password"],
 textarea {
 	border: solid 1px #a1a1a1;
 	border-radius: 0.15em;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.125em;
 	padding: 0.35em;
 	width: 100%;
@@ -633,7 +636,7 @@ input[type="submit"] {
 	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
 	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
 	color: #ffffff;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.25em;
 	padding: 0.35em 0.75em;
 }
@@ -644,7 +647,7 @@ input[type="submit"] {
 /* header styles */
 #banner {
 	background-size: 1em 1em;
-	background-color: #a1a1a1;
+	background-color: #26435e;
 	background-image: -webkit-linear-gradient(-90deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
 	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
 	                  transparent 75%, transparent);
@@ -742,7 +745,7 @@ body:before {
 	border-radius: 0.2em;
 	display: block;
 	float: right;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin-top: -2.25em;
 	padding: 0.2em 0.35em;
@@ -894,7 +897,7 @@ body:before {
 .menu-item > a {
 	color: #ffffff;
 	display: block;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 1em;
 	font-weight: 900;
 	padding: 0.75em 1em 0.65em 1em; 
@@ -1028,7 +1031,7 @@ body:before {
 	border: 0;
 	box-shadow: none;
 	color: #ffffff;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-weight: normal; 
 	margin: 0.25em;
 	padding: 0.1em;
@@ -1148,7 +1151,7 @@ body:before {
 /* footer styles */
 
 #footer {
-	background-color: #35475B;
+	background-color: #26435e;
 	color: #ffffff;
 	padding-top: 3em;
 	padding-bottom: 5em;
@@ -1176,12 +1179,12 @@ body:before {
 	}
 
 .footer-contact p {
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 }
 
 .footer-contact .name {
-	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-	font-size: 1.25em;
+	font-family: "UnifrakturCook", Georgia, "New Times Roman", serif;
+	font-size: 2em;
 	font-weight: bold;
 }
 
@@ -1202,7 +1205,6 @@ body:before {
 }
 .nav-footer a {
 	font-size: 1.25em;
-	font-weight: bold;
 	line-height: 1.5; 
 }
 
@@ -1264,102 +1266,118 @@ body:before {
 	font-size: 1.25em;
 	max-width: 34.4em;
 }
-/* /content area styles */
 
-/* resume styles */
-.resume-entry {
-	max-width: 43em;
-	margin: 0 auto 1.5em auto;
+.byline {
+	color: #919191;
+	font-size: 1.25em;
+	font-style: italic;
+	margin: 0 auto 1em auto;
+	max-width: 34.4em;
 }
 	@media only screen and (min-width: 81.25em) {
-	    .resume-entry {
-		    max-width: 48.375em;
+	    .byline {
+		    max-width: 38.75em;
 	    }
 	}
-
-.resume-entry .title {
-	display: inline-block;
-	margin-top: 0;
-	width: 80%;
+.byline:before {
+	content: 'By ';
 }
 
-.resume-entry .timeframe {
-	display: block;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
-}
-	@media only screen and (min-width: 43.75em) {
-	    .resume-entry .timeframe {
-		    float: right;
-		    margin-top: 1em;
-		    text-align: right;
-			width: 18%;
-	    }
-	}
-
-.resume-entry .subtitle {
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
-	font-weight: normal;
-	margin-top: 0;
+blockquote {
+	width: 85%;
+	margin: 0 auto 1em auto; 
+	font-size: 1.5em; 
+	line-height: 1.4em; 
+	font-family: "Alegreya", Georgia, "Times New Roman"; 
+	font-style: italic; 
+	font-weight: 700;
+	position: relative;
 }
 
-/* end resume styles */
-
-/* portfolio styles */
-.flexslider {
-	margin-bottom: 1.5em;
-}
-
-.flex-caption {
-	background-color: #B7D0E8;
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
-	padding: 0 0.15em;
-}
-
-.flex-direction-nav a {
-	height: 2.5em;
-	top: 37%;
-	width: 2.5em;
-}
-
-.flex-direction-nav a:before {
+blockquote:before {
+	content: "\201C";
 	font-size: 2em;
+	color: #9f9f9f;
+	position: absolute;
+	top: 0;
+	left: -0.5em;
+    
 }
 
-.flex-control-thumbs {
-	text-align: center;
+blockquote:after {
+	content: "\201D";
+	font-size: 2em;
+	color: #9f9f9f;
+	position: relative;
+	bottom: -0.2em;
+	right: 0; 
+	display: inline;
+    line-height: .2em;
 }
-
-.flex-control-thumbs li {
-	display: inline-block;
-	float: none;
-	padding: 0 0.25em;
-}
-
-.flexbox .flex-control-thumbs {
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row wrap;
-	justify-content: space-around;	
-}
-
-.flexbox .flex-control-thumbs li {
-	flex-grow: 1;
-}
-
-.portfolio-images {
-}
-	@media only screen and (min-width: 43.75em) {
-	    .portfolio-images {
-		    border: none;
-		    float: left;
-		    margin-left: -12.5%;
-			margin-right: 1em;
-			padding: 0 1em 0 0;
-			width: 62.5%;
-	    }
+	@media screen and (min-width: 43.75em) { 
+		
+		blockquote {
+			font-size: 1.5em; 
+			width: 50%;
+			margin: 0 0 1em 0; 
+		}
+		
+		blockquote.left {
+			float: left; 
+			margin-right: 3.5%;
+			margin-left: -2em;
+			padding-left: 1em;
+		}
+		
+		blockquote.right {
+			float: right; 
+			margin-left: 3.5%; 
+			margin-right: -2em;
+			padding-right: 1em;
+		}
+		
+		blockquote:before {
+			left: -0.1em;
+		    
+		}	
 	}
-/* end portfolio styles */
+
+/* END BLOCKQUOTE styles */
+
+/* Initial Cap styles */
+.article-detail p:first-of-type:first-letter {
+	font-size: 4em; 
+	font-family: "Alegreya", Georgia, "Times New Roman";
+	line-height: 0.9em; 
+	float: left; 
+	padding-right: 0.15em; 
+	
+}
+
+.lt-ie9 .article-detail footer + p:first-letter {
+    font-size: 4em; 
+    font-family: "Alegreya", Georgia, "Times New Roman";
+	line-height: 0.9em; 
+	float: left; 
+	padding-right: 0.15em; 	
+}
+	@media screen and (min-width: 43.75em) { 
+		.article-detail p:first-of-type:first-letter { 
+			font-size: 5em;
+		}
+		.lt-ie9 .article-detail footer + p:first-letter { 
+			font-size: 5em;
+		}
+	}
+	
+/* First-line styles */
+p.first-line:first-line {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* /content area styles */
+
 
 
 /* card styles */
@@ -1436,20 +1454,13 @@ body:before {
 	background-color: #f1f1f1;
 }
 .card figcaption {
-	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
 	font-size: 1.125em;
 	font-weight: normal;
 	line-height: 1.125;
 	padding-top: 0.25em;
 	padding-left: 0.44444444444444em;
 	padding-right: 0.44444444444444em;
-}
-
-.card .roles {
-	font-size: 0.875em;
-	font-style: italic;
-	padding-left: 0.57142857142857em;
-	padding-right: 0.57142857142857em;
 }
 
 /* end card styles */

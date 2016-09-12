@@ -42,37 +42,45 @@
 						return;
 					}
 			
-					var fontA = new FontFaceObserver('Alegreya', {
+					var fontA = new FontFaceObserver('Fira Sans', {
 							weight: 400,
 							style: 'normal'
 						});
-					var fontB = new FontFaceObserver('Alegreya', {
+					var fontB = new FontFaceObserver('Fira Sans', {
 							weight: 700,
 							style: 'normal'
 						});
-					var fontC = new FontFaceObserver('Alegreya', {
-							weight: 900,
-							style: 'normal'
-						});
-					var fontD = new FontFaceObserver('Alegreya', {
+					var fontC = new FontFaceObserver('Fira Sans', {
 							weight: 400,
+							style: 'italic'
+						});
+					var fontD = new FontFaceObserver('Fira Sans', {
+							weight: 700,
 							style: 'italic'
 						});
 					var fontE = new FontFaceObserver('Alegreya', {
 							weight: 700,
-							style: 'italic'
-						});
-					var fontF = new FontFaceObserver('Alegreya Sans', {
-							weight: 400,
 							style: 'normal'
 						});
-					var fontG = new FontFaceObserver('Alegreya Sans', {
+					var fontF = new FontFaceObserver('Alegreya', {
+							weight: 700,
+							style: 'italic'
+						});
+					var fontG = new FontFaceObserver('Alegreya', {
 							weight: 900,
+							style: 'normal'
+						});
+					var fontH = new FontFaceObserver('Kanit', {
+							weight: 900,
+							style: 'normal'
+						});
+					var fontI = new FontFaceObserver('UnifrakturCook', {
+							weight: 700,
 							style: 'normal'
 						});
 						
 			
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
 						document.documentElement.classList.remove("wf-inactive");
 						document.documentElement.classList.add("wf-active");
 			
@@ -143,9 +151,7 @@
         <header role="banner" class="banner clearfix" id="banner">
 	        <div class="section-content">
 		        <div class="branding clearfix">
-			        <figure id="logo"><a href="index_final.html" title="Return to Home Page"><img src="../img/logo.png" alt="my logo" /></a></figure>
-			        <h1><a href="index_final.html" title="Return to Home Page">James Davidson</a></h1>
-			        <h2>user experience designer</h2>
+			        <h1><a href="index_final.html" title="Return to Home Page">The Daily News</a></h1>
 		        </div>
 	        </div>
         </header>
@@ -153,19 +159,10 @@
 			<a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
 			<div class="main-nav-inner">
 				<ul class="nav-menu">
-					<li class="menu-item"><a href="about_final.html">About</a></li>
-					<li class="menu-item"><a href="resume_final.html">Resume</a></li>
-					<li class="menu-item"><a href="portfolio_final.html">Portfolio</a>
-						<ul class="sub-menu">
-							<li class="menu-item"><a href="portfolio_project1_final.html">Project 1</a></li>
-							<li class="menu-item"><a href="portfolio_project2_final.html">Project 2</a></li>
-							<li class="menu-item"><a href="portfolio_project3_final.html">Project 3</a></li>
-							<li class="menu-item"><a href="portfolio_project4_final.html">Project 4</a></li>
-							<li class="menu-item"><a href="portfolio_project5_final.html">Project 5</a></li>
-							<li class="menu-item"><a href="portfolio_project6_final.html">Project 6</a></li>
-						</ul>
-					</li>
-					<li class="menu-item"><a href="contact_final.html">Contact</a></li>
+					<li class="menu-item"><a href="index_final.html">Home</a></li>
+					<li class="menu-item"><a href="money_final.html">Money</a></li>
+					<li class="menu-item"><a href="sport_final.html">Sport</a></li>
+					<li class="menu-item"><a href="opinion_final.html">Opinion</a></li>
 				</ul><!--/.nav-menu-->
 			</div>
 		</nav>

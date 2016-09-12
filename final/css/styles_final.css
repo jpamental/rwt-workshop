@@ -1264,7 +1264,7 @@ body:before {
     padding-bottom: 5em;
 }
 .home .content-area h1 {
-	margin: 1.25em auto 1.5em auto;
+	margin: 0.25em auto 0.5em auto;
 	max-width: none;
 	text-align: center;
 }
@@ -1540,14 +1540,49 @@ p.first-line:first-line {
 .card {
 	background-color: #f1f1f1;
 }
-.card figcaption {
-	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-	font-size: 1.125em;
+.card h2 {
+	font-size: 1.5em;
 	font-weight: normal;
 	line-height: 1.125;
 	padding-top: 0.25em;
 	padding-left: 0.44444444444444em;
 	padding-right: 0.44444444444444em;
+}
+
+.card footer {
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1.125;
+	padding-top: 0.25em;
+	padding-left: 0.44444444444444em;
+	padding-right: 0.44444444444444em;
+}
+
+.flexbox .card footer {
+	
+}
+
+.card .card-type {
+		background-color: #a0ae57;
+		color: #fff;
+		font-family: "Kanit", "Arial Black", sans-serif;
+		font-weight: 900;
+		margin-top: 0;
+		padding: 0.1em;
+		text-transform: uppercase;
+}
+
+.card.money .card-type {
+		background-color: #8d9a91;
+}
+
+.card.sport .card-type {
+		background-color: #3875a1;
+}
+
+.card.opinion .card-type {
+		background-color: #a0ae57;
 }
 
 /* end card styles */

@@ -25,128 +25,14 @@
     <link rel="stylesheet" href="../css/normalize.min.css">
     <link rel="stylesheet" href="../css/setup.min.css">
     <link rel="stylesheet" href="../css/styles_start.css">
-    <link rel="stylesheet" href="../css/webfonts.css">
+		<link href="https://fonts.googleapis.com/css?family=Alegreya:700,700i,900|Fira+Sans:400,400i,700,700i|Kanit:900|UnifrakturCook:700" rel="stylesheet">		<!--[if lt IE 9]>
 		<!--[if lt IE 9]>
 			<script src="../js/vendor/respond.min.js"></script>
 		<![endif]-->
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
-    <script src="../js/vendor/fontfaceobserver.js"></script>
-		<script type="text/javascript">
-				(function() {
-					document.documentElement.className += " wf-inactive"; 
-			
-					// Optimization for Repeat Views
-					if( sessionStorage.foutFontsLoaded ) {
-						document.documentElement.classList.remove("wf-inactive");
-						document.documentElement.classList.add("wf-active");
-						return;
-					}
-			
-					var fontA = new FontFaceObserver('Fira Sans', {
-							weight: 400,
-							style: 'normal'
-						});
-					var fontB = new FontFaceObserver('Fira Sans', {
-							weight: 700,
-							style: 'normal'
-						});
-					var fontC = new FontFaceObserver('Fira Sans', {
-							weight: 400,
-							style: 'italic'
-						});
-					var fontD = new FontFaceObserver('Fira Sans', {
-							weight: 700,
-							style: 'italic'
-						});
-					var fontE = new FontFaceObserver('Alegreya', {
-							weight: 700,
-							style: 'normal'
-						});
-					var fontF = new FontFaceObserver('Alegreya', {
-							weight: 700,
-							style: 'italic'
-						});
-					var fontG = new FontFaceObserver('Alegreya', {
-							weight: 900,
-							style: 'normal'
-						});
-					var fontH = new FontFaceObserver('Kanit', {
-							weight: 900,
-							style: 'normal'
-						});
-					var fontI = new FontFaceObserver('UnifrakturCook', {
-							weight: 700,
-							style: 'normal'
-						});
-						
-			
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
-						document.documentElement.classList.remove("wf-inactive");
-						document.documentElement.classList.add("wf-active");
-			
-						// Optimization for Repeat Views
-						sessionStorage.foutFontsLoaded = true;
-					});
-				})();
-			</script>
         
     </head>
     <body>
-        		<!-- BEGIN web font toggle -->
-        		<a href="#" id="toggle-fonts" class="toggle-fonts button on">Web Fonts</a>
-				<style>
-					.button {
-					  font-size: 14px;
-					  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
-					  text-decoration: none;
-					  font-weight: bold;
-					  color: #383838;
-					  background-color: #fefafa;
-					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
-					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
-					  background-image: linear-gradient(#ffffff, #ede9e9);
-					  padding: 0.25em;
-					  border-radius: 0.5em;
-					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-					}
-					.button:hover {
-					  background-color: #e4e1e1;
-					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
-					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
-					  background-image: linear-gradient(#fefafa, #cbc7c7);
-					}
-					.toggle-fonts {
-					  position: fixed; 
-					  top: 0.5em; 
-					  right: 0.5em; 
-					  z-index: 999;
-					}
-					.toggle-fonts.on:after {
-					  content: ": on";
-					}
-					.toggle-fonts.off:after {
-					  content: ": off";
-					}
-				</style>
-				
-
-				<script>
-					if (!'classList' in document.createElement('span')) {
-			            document.getElementById('c-unsupported').classList.remove('hidden');
-			            document.getElementById('execute').setAttribute('disabled', 'disabled');
-			         } else {
-			            document.getElementById('toggle-fonts').addEventListener('click', function() {
-							document.getElementById('toggle-fonts').classList.toggle('on');
-							document.getElementById('toggle-fonts').classList.toggle('off');
-							document.getElementsByTagName("html")[0].classList.toggle('wf-active');
-							document.getElementsByTagName("html")[0].classList.toggle('wf-inactive');
-			        	});
-         			}
-         		</script>
-
-        		<!-- END web font toggle -->
 
         <!-- Add your site or application content here -->
         <header role="banner" class="banner clearfix" id="banner">

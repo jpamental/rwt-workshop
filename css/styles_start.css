@@ -124,21 +124,54 @@ p, h1, h2, h3, h4, h5, h6 {
 p {
 	font-size: 1em;
 	line-height: 1.4375;
-
+	max-width: 41em;
 }
-
+.wf-inactive p {
+	font-family: Helvetica, Arial, sans-serif;
+}
 h1 {
-	font-size: 3em;
+	font-size: 2em;
 	line-height: 1.125;
 	margin-top: 0.5em;
 	margin-bottom: 0.25em;
 }
+.wf-inactive h1 {
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 2.6em;
+	letter-spacing: -1px;
+	margin-top: 0.6em;
+}
+@media only screen and (min-width: 25em) {
+    h1 {
+	    font-size: 2em;
+    }
+}
+@media only screen and (min-width: 43.75em) {
+    h1 {
+	    font-size: 3em;
+    }
+}
+
 
 h2 {
-	font-size: 2.25em;
+	font-size: 1.75em;
 	line-height: 1.125;
 	margin-top: 0.5em;
 	margin-bottom: 0.125em;
+}
+.wf-inactive h2 {
+	font-family: Georgia, "New Times Roman", serif;
+}
+@media only screen and (min-width: 25em) {
+    h2 {
+	    font-size: 1.75em;
+    }
+}
+@media only screen and (min-width: 43.75em) {
+    h2 {
+	    font-size: 2.25em;
+	    max-width: 41rem;
+    }
 }
 
 h3 {
@@ -171,33 +204,105 @@ h6 {
 
 .section-name {
 	font-family: Kanit, "Arial Black", sans-serif;
-	font-size: 7em;
+	font-size: 23.5vw;
 	font-weight: 900;
   line-height: .625;
   margin: 0 auto 0 auto; 
   overflow: hidden;
-  padding: 0 0 0.15em 17%;
+  padding: 0 0 0.15em 0;
   position: relative;
+  text-align: center;
 	text-transform: uppercase;
 }
 .section-name.opinion {
 	color: #3875a1;
+	font-size: 23.5vw;
 }
 .section-name.money {
 	color: #8d9a91;
+	font-size: 27.75vw;
 }
 .section-name.sport {
 	color: #a0ae57;
+	font-size: 30.75vw;
 }
 
 .section-name-image {
 	bottom: -0.15em;
 	margin-bottom: 0;
 	position: absolute;
-	right: 13%;
-	bottom: -0.25em;
-	width: 1em;
+	right: -1vw;
+	width: 15vw;
 }
+	@media only screen and (min-width: 43.75em) {
+	  .section-name.opinion {
+		    font-size: 18.5vw;
+		}
+	  .section-name.money {
+		    font-size: 21.85vw;
+		}
+		.wf-inactive .section-name.money {
+			font-size: 19.25vw;
+			letter-spacing: -11px;
+		}
+	  .section-name.sport {
+		    font-size: 24.25vw;
+		}
+		.section-name-image {
+			right: 12vw;
+		}
+	}
+	@media only screen and (min-width: 56.25em) {
+	  .section-name.opinion {
+		    font-size: 17.75vw;
+		}
+	  .section-name.money {
+		    font-size: 21vw;
+		}
+		.wf-inactive .section-name.money {
+			font-size: 18.55vw;
+			letter-spacing: -11px;
+		}
+	  .section-name.sport {
+		    font-size: 23.25vw;
+		}
+	}
+	@media only screen and (min-width: 71.875em) {
+	  .section-name.opinion {
+		    font-size: 17vw;
+		}
+	  .section-name.money {
+		    font-size: 20.1vw;
+		}
+		.wf-inactive .section-name.money {
+			font-size: 17.75vw;
+			letter-spacing: -11px;
+		}
+	  .section-name.sport {
+		    font-size: 22.25vw;
+		}
+	}
+	@media only screen and (min-width: 81.25em) {
+	  .section-name.opinion {
+		    font-size: 16.5vw;
+		}
+		.wf-inactive .section-name.opinion {
+			font-size: 14.85vw;
+		}
+	  .section-name.money {
+		    font-size: 19.5vw;
+		}
+		.wf-inactive .section-name.money {
+			font-size: 17.25vw;
+			letter-spacing: -11px;
+		}
+	  .section-name.sport {
+		    font-size: 21.75vw;
+		}
+		.wf-inactive .section-name.sport {
+			font-size: 18.95vw;
+		}
+	}
 
 
 /* ==========================================================================
@@ -985,13 +1090,23 @@ body:before {
 
 .byline {
 	color: #919191;
-	font-size: 1em;
+	font-size: .875em;
 	font-style: italic;
 	margin: 0 0 1em 0;
 }
 .byline:before {
 	content: 'By ';
 }
+	@media only screen and (min-width: 43.75em) {
+	    .byline {
+		    margin-left: auto;
+		    margin-right: auto;
+		    font-size: 1em;
+		    max-width: 41em;
+	    }
+	}
+
+
 
 blockquote {
 	width: 85%;
@@ -1007,6 +1122,32 @@ blockquote {
 
 /* END BLOCKQUOTE styles */
 
+.article-detail p:first-of-type:first-letter {
+	font-size: 3em;
+	float: left;
+	line-height: 1;
+	font-family: "Alegreya", Georgia, serif;
+	font-weight: 900;
+	padding-right: 0.25em;
+}
+.columns {
+}
+	@media only screen and (min-width: 43.75em) {
+		.columns {
+			-webkit-columns: 2;
+			-moz-columns: 2;
+			columns: 2;
+			-webkit-column-gap: 2em;
+			-moz-column-gap: 2em;
+			column-gap: 2em;
+		}
+	}
+	@media only screen and (min-width: 56.25em) {
+		.columns {
+			column-gap: 2em;
+			max-width: none;
+		}
+	}
 
 /* stocks container */
 .stocks-container {
@@ -1177,6 +1318,18 @@ figure {
 	margin-bottom: 1em;
 }
 
+figure.circle {
+		-webkit-shape-outside: circle();
+    shape-outside: circle();
+    /* shape-box is not supported yet, but this is the syntax that should work when it is */
+    -webkit-shape-box: content-box;
+    shape-box: content-box;
+
+}
+figure.circle img {
+	border-radius: 50%;
+}
+
 figure.small {
 	width: 50%;
 	-webkit-transition: width linear 0.2s;
@@ -1224,10 +1377,37 @@ figure.left.hang-50 {
 figure.right.hang-50 {
 	margin-right: 0;
 }
+	@media only screen and (min-width: 43.75em) {
+	    figure.left.hang-50 {
+		    margin-left: -12.5%;
+		    /* below compensates for lack of support for 'shape-box: content-box' */
+		    -webkit-shape-outside: polygon(35% 0, 75% 15%, 95% 35%, 100% 50%,95% 65%,75% 85%, 35% 100%);
+		    shape-outside: polygon(35% 0, 75% 15%, 95% 35%, 100% 50%,95% 65%,75% 85%, 35% 100%);
+	    }
+	    figure.right.hang-50 {
+		    margin-right: -12.5%;
+		    /* below compensates for lack of support for 'shape-box: content-box' */
+		    -webkit-shape-outside: polygon(50% 0, 15% 15%, 5% 35%, 0 50%,5% 65%,15% 85%, 50% 100%);
+		    shape-outside: polygon(50% 0, 15% 15%, 5% 35%, 0 50%,5% 65%,15% 85%, 50% 100%);
+	    }
+	}
 
 figcaption {
 	color: #a1a1a1;
 }
+
+  @media (min-width: 43.75em) {
+    figcaption.right-side {
+      position: absolute;
+      left: 100%;
+      top: 100%;
+      width: 55%;
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      transform: rotate(-90deg);
+      transform-origin: 0 0; 
+    } 
+  }
 
 /* /figure styles */
 

@@ -24,15 +24,16 @@
     <link rel="stylesheet" href="../css/font-awesome.css">
     <link rel="stylesheet" href="../css/normalize.min.css">
     <link rel="stylesheet" href="../css/setup.min.css">
-    <link rel="stylesheet" href="../css/styles_final_goodtypography.css">
+    <link rel="stylesheet" href="../css/good_typography/layout.css">
+    <link rel="stylesheet" href="../css/good_typography/styles.css">
     <link rel="stylesheet" href="../css/webfonts.css">
-    <link rel="stylesheet" href="../css/good_typography.css">
+    <link rel="stylesheet" href="../css/good_typography/intentional_typography.css">
 		<!--[if lt IE 9]>
 			<script src="../js/vendor/respond.min.js"></script>
 		<![endif]-->
     <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="../js/vendor/fontfaceobserver.js"></script>
-    <script>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=all" rel="stylesheet">    <script>
       (function(d) {
         var config = {
           kitId: 'bnv4ubk',
@@ -53,45 +54,33 @@
 						return;
 					}
 			
-					var fontA = new FontFaceObserver('essonnes-text', {
+					var fontA = new FontFaceObserver('Playfiar Display', {
 							weight: 400,
 							style: 'normal'
 						});
-					var fontB = new FontFaceObserver('essonnes-text', {
-							weight: 700,
-							style: 'normal'
-						});
-					var fontC = new FontFaceObserver('essonnes-text', {
+					var fontB = new FontFaceObserver('Playfiar Display', {
 							weight: 400,
 							style: 'italic'
 						});
-					var fontD = new FontFaceObserver('essonnes-text', {
+					var fontC = new FontFaceObserver('Playfiar Display', {
+							weight: 700,
+							style: 'normal'
+						});
+					var fontD = new FontFaceObserver('Playfiar Display', {
 							weight: 700,
 							style: 'italic'
 						});
-					var fontE = new FontFaceObserver('essonnes-headline', {
-							weight: 700,
+					var fontE = new FontFaceObserver('Playfiar Display', {
+							weight: 900,
 							style: 'normal'
 						});
-					var fontF = new FontFaceObserver('essonnes-display', {
-							weight: 300,
-							style: 'normal'
-						});
-					var fontG = new FontFaceObserver('essonnes-display', {
-							weight: 300,
-							style: 'italic'
-						});
-					var fontH = new FontFaceObserver('essonnes-display', {
-							weight: 700,
-							style: 'normal'
-						});
-					var fontI = new FontFaceObserver('essonnes-display', {
-							weight: 700,
+					var fontF = new FontFaceObserver('Playfiar Display', {
+							weight: 900,
 							style: 'italic'
 						});
 						
 			
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load()]).then(function () {
 						document.documentElement.classList.remove("wf-inactive");
 						document.documentElement.classList.add("wf-active");
 			
@@ -170,7 +159,7 @@ Monday 12 September 2016 <span class="dateline-time">12.00&nbsp;BST</span>
     <!-- classList polyfill -->
     <script src="../js/vendor/classlist_polyfill.min.js" defer></script>
 
-    <script src="../js/main.js" defer></script>
+    <script src="../js/good_typography.js" defer></script>
 
     </body>
 </html>

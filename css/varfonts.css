@@ -104,6 +104,7 @@
 .varfonts .section-name {
 	font-family: "Gingham";
 	font-weight: normal;
+	letter-spacing: -.06em;
 	line-height: 0.825;
 	padding-bottom: 0.02em;
   font-variation-settings: 'wght' 699.999, 'wdth' 149.999;

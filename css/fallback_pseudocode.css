@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Fira Sans'), local('FiraSans-Regular'),
+       url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/fira-sans-v6-latin/fira-sans-v6-latin-regular.svg#FiraSans') format('svg'); /* Legacy iOS */
+  font-display: swap;
+  @loading {
+	  Helvetica {
+		  font-size: 0.975em;
+		  font-style: normal;
+		  font-weight: normal;
+		  letter-spacing: -1px;
+		  line-height: 1.275;
+		  word-spacing: ;
+	  }, 
+	  Arial {}, 
+	  "Droid Sans" {},
+	  sans-serif;
+  }
+}

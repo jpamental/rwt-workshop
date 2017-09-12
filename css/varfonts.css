@@ -1,44 +1,57 @@
+@font-face {
+  font-family: "Amstelvar VF";
+  src: url('../fonts/varfonts/AmstelvarAlpha-VF.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Gingham';
+  src: url('../fonts/varfonts/Gingham/Gingham.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/varfonts/Gingham/Gingham.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/varfonts/Gingham/Gingham.ttf') format('truetype'); /* Safari, Android, iOS */
+}
+
+
+
 .varfonts p {
-	font-family: skia;
+	font-family: "Amstelvar VF";
 	font-size: 1.1em;
-  font-variation-settings: "wdth" 0.7, "wght" 0.5;
+  font-variation-settings: 'wght' 87.9896, 'wdth' 351.008, 'opsz' 41.7254, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;  font-style: normal;
   letter-spacing: -1px;
 }
 	@media only screen and (min-width: 35em) {
     .varfonts p {
-      font-variation-settings: "wdth" 1, "wght" 1;
-      letter-spacing: 0;
+      font-variation-settings: 'cntr' 99.9998, 'grad' 176, 'opsz' 13.999, 'prwd' 803.999, 'prwg' 176.023, 'srfr' 34.998, 'wdth' 803.999, 'wght' 100, 'xhgt' 999.988;
 		}
 	}
 
 	@media only screen and (min-width: 81.25em) {
     .varfonts p {
 	    font-size: 1.25em;
-      font-variation-settings: "wdth" 1, "wght" 1;
+      font-variation-settings: 'cntr' 99.9998, 'grad' 176, 'opsz' 13.999, 'prwd' 803.999, 'prwg' 176.023, 'srfr' 34.998, 'wdth' 803.999, 'wght' 100, 'xhgt' 999.988;
       letter-spacing: 0;
 		}
 	}
 
 .varfonts .article-detail.initial p:first-of-type:first-letter {
-	font-size: 4em; 
-	font-family: "skia";
-  font-variation-settings: "wdth" 0.9, "wght" 1.9;
+	font-size: 5em; 
+	font-family: "Amstelvar VF";
+  font-variation-settings: 'wght' 249.999, 'wdth' 229.016, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
 	line-height: 0.9em; 
 	float: left; 
+  margin-bottom: -.1em;
 	padding-right: 0.1em; 
 	
 }
 	@media only screen and (min-width: 35em) {
     .varfonts .article-detail.initial p:first-of-type:first-letter {
-      font-variation-settings: "wdth" 1.15, "wght" 1.9;
-      padding-right: 0.35em;
+      font-variation-settings: 'wght' 249.999, 'wdth' 229.016, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
+      padding-right: 0.1em;
 		}
 	}
 	@media only screen and (min-width: 81.25em) {
     .varfonts .article-detail.initial p:first-of-type:first-letter {
-      font-size: 5em;
-      font-variation-settings: "wdth" 1.95, "wght" 1.99;
-      padding-right: 0.15em;
+      font-variation-settings: 'wght' 249.999, 'wdth' 229.016, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
+      line-height: 0.96em; 
+      padding-right: 0.1em;
 		}
 	}
 
@@ -57,42 +70,43 @@
 	}
 
 .varfonts h1 {
-	font-family: skia;
-	font-weight: normal;
-  font-variation-settings: "wdth" 0.95, "wght" 1.95;
-  letter-spacing: -0.015em;
+	font-family: "Amstelvar VF";
+  font-variation-settings: 'wght' 249.999, 'wdth' 229.016, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
+  letter-spacing: 0;
 }
 	@media only screen and (min-width: 56.25em) {
     .varfonts h1 {
-      font-size: 3em;
-			font-variation-settings: "wdth" 1.2, "wght" 1.75;
-			letter-spacing: 0.15em;
+      font-size: 3.5em;
+      font-variation-settings: 'wght' 249.999, 'wdth' 229.016, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
 		}
 	}
 
 .varfonts h2 {
-	font-family: skia;
+	font-family: "Amstelvar VF";
+  font-size: 1.85em;
 	font-weight: normal;
-  font-variation-settings: "wdth" 1.1, "wght" 1.35;
-  letter-spacing: 0.05em;
+  font-variation-settings: 'wght' 121.676, 'wdth' 401.999, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
+  max-width: 24.35em;
 }
 	@media only screen and (min-width: 56.25em) {
     .varfonts h2 {
       font-size: 2.45em;
+      font-variation-settings: 'wght' 121.676, 'wdth' 401.999, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
 		}
 	}
 	@media only screen and (min-width: 81.25em) {
     .varfonts h2 {
       font-size: 2.65em;
+      font-variation-settings: 'wght' 121.676, 'wdth' 401.999, 'opsz' 13.999, 'XOPQ' 88.0115, 'XTRA' 401.999, 'YOPQ' 49.9999, 'YTLC' 499.994, 'YTSE' 18, 'GRAD' 88.001, 'XTCH' 1000, 'YTCH' 1000, 'YTAS' 750, 'YTDE' 250, 'YTUC' 749.99, 'YTRA' 1000;
 		}
 	}
 
 .varfonts .section-name {
-	font-family: skia;
+	font-family: "Gingham";
 	font-weight: normal;
 	line-height: 0.825;
 	padding-bottom: 0.02em;
-	font-variation-settings: "wdth" 1.95, "wght" 1.95;
+  font-variation-settings: 'wght' 699.999, 'wdth' 149.999;
 }
 
 .varfonts .section-name.sport {

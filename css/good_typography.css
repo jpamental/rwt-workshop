@@ -1,0 +1,101 @@
+.goodtypography p {
+	font-family: 'essonnes-text';
+	font-size: 1.125em;
+}
+	@media only screen and (min-width: 81.25em) {
+    .goodtypography p {
+	    font-size: 1.3333em;
+      font-feature-settings: "liga" 1, "kern" 1;
+      letter-spacing: 0;
+		}
+	}
+
+
+.goodtypography .byline {
+	font-family: 'essonnes-text';
+	font-style: normal;
+}
+	@media only screen and (min-width: 35em) {
+    .goodtypography .byline {
+      font-size: 1.3em;
+		}
+	}
+	@media only screen and (min-width: 81.25em) {
+    .goodtypography .byline {
+      font-size: 1.35em;
+      max-width: 42.75em;
+		}
+	}
+
+.goodtypography h1 {
+	font-family: 'essonnes-display';
+  font-feature-settings: "liga" 1, "kern" 1;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+	@media only screen and (min-width: 56.25em) {
+    .goodtypography h1 {
+      font-size: 6em;
+      line-height: 1;
+		}
+	}
+
+.goodtypography h2 {
+	font-family: 'essonnes-display';
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: -1px;
+}
+	@media only screen and (min-width: 56.25em) {
+    .goodtypography h2 {
+      font-size: 2.45em;
+		}
+	}
+	@media only screen and (min-width: 81.25em) {
+    .goodtypography h2 {
+      font-size: 2.65em;
+		  max-width: 21.5em; 
+		}
+	}
+
+
+.goodtypography .paper-name {
+	font-family: 'essonnes-text';
+  font-size: 1.5em;
+	font-weight: normal;
+	line-height: 1;
+	padding-bottom: 0;
+	padding-top: 0.5em;
+}
+	@media only screen and (min-width: 56.25em) {
+    .goodtypography .paper-name {
+      font-size: 2.5em;
+		}
+	}
+
+.goodtypography .section-name {
+	font-family: 'essonnes-text';
+	font-weight: normal;
+	line-height: 0.825;
+	padding-bottom: 0.02em;
+}
+
+.goodtypography .section-name.sport {
+	font-size: 33.85vw;
+}
+	@media only screen and (min-width: 43.75em) {
+    .goodtypography .section-name.sport {
+      font-size: 25.85vw;
+		}
+	}
+	@media only screen and (min-width: 56.25em) {
+    .goodtypography .section-name.sport {
+      font-size: 25.85vw;
+		}
+	}
+	@media only screen and (min-width: 81.25em) {
+    .goodtypography .section-name.sport {
+      font-size: 24.15vw;
+		}
+	}
+	

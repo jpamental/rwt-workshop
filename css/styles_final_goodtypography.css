@@ -55,6 +55,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-color: #F4F3EF;
+}
+
 body, 
 p, 
 th, 
@@ -62,45 +66,60 @@ td,
 ul, 
 li {
 	font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h1 {
 	color: #35475B;
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 	font-size: 3em;
 	font-weight: 900;
 }
 
 h2 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h3 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h4 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h5 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 }
 
 h6 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
-  font-feature-settings: "liga" 1, "kern" 1;
 	text-transform: uppercase;
 }
 
 p {
 	margin: 0 0 1em 0;
+}
+
+a:link {
+  color: blue;
+  -webkit-text-decoration-skip: skip;
+  text-decoration-skip: ink;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: navy;
+}
+
+a:active {
+  color: red;
+}
+
+a:focus {
+  color: red;
 }
 
 img {
@@ -432,114 +451,6 @@ h6 {
 	}
 
 
-.section-name {
-	font-family: Kanit, "Arial Black", sans-serif;
-	font-size: 23.5vw;
-	font-weight: 900;
-  line-height: .625;
-  margin: 0 auto 0 auto; 
-  overflow: hidden;
-  padding: 0 0 0.15em 0;
-  position: relative;
-  text-align: center;
-	text-transform: uppercase;
-}
-.wf-inactive .section-name {
-	font-family: "Arial Black", sans-serif;
-	font-size: 23.5vw;
-	line-height: .725;
-}
-
-.section-name.opinion {
-	color: #3875a1;
-	font-size: 23.5vw;
-}
-.section-name.money {
-	color: #8d9a91;
-	font-size: 27.75vw;
-}
-.wf-inactive .section-name.money {
-	font-size: 25.75vw;
-	letter-spacing: -11px;
-}
-.section-name.sport {
-	color: #a0ae57;
-	font-size: 30.75vw;
-}
-
-.section-name-image {
-	bottom: -0.15em;
-	margin-bottom: 0;
-	position: absolute;
-	right: 12vw;
-	width: 15vw;
-}
-	@media only screen and (min-width: 43.75em) {
-	  .section-name.opinion {
-		    font-size: 18.5vw;
-		}
-	  .section-name.money {
-		    font-size: 21.85vw;
-		}
-		.wf-inactive .section-name.money {
-			font-size: 19.25vw;
-			letter-spacing: -11px;
-		}
-	  .section-name.sport {
-		    font-size: 24.25vw;
-		}
-	}
-	@media only screen and (min-width: 56.25em) {
-	  .section-name.opinion {
-		    font-size: 17.75vw;
-		}
-	  .section-name.money {
-		    font-size: 21vw;
-		}
-		.wf-inactive .section-name.money {
-			font-size: 18.55vw;
-			letter-spacing: -11px;
-		}
-	  .section-name.sport {
-		    font-size: 23.25vw;
-		}
-	}
-	@media only screen and (min-width: 71.875em) {
-	  .section-name.opinion {
-		    font-size: 17vw;
-		}
-	  .section-name.money {
-		    font-size: 20.1vw;
-		}
-		.wf-inactive .section-name.money {
-			font-size: 17.75vw;
-			letter-spacing: -11px;
-		}
-	  .section-name.sport {
-		    font-size: 22.25vw;
-		}
-	}
-	@media only screen and (min-width: 81.25em) {
-	  .section-name.opinion {
-		    font-size: 16.5vw;
-		}
-		.wf-inactive .section-name.opinion {
-			font-size: 14.85vw;
-		}
-	  .section-name.money {
-		    font-size: 19.5vw;
-		}
-		.wf-inactive .section-name.money {
-			font-size: 17.25vw;
-			letter-spacing: -11px;
-		}
-	  .section-name.sport {
-		    font-size: 21.75vw;
-		}
-		.wf-inactive .section-name.sport {
-			font-size: 18.95vw;
-		}
-	}
 
 
 /* ==========================================================================
@@ -576,7 +487,7 @@ h6 {
 	
 	@media only screen and (min-width: 81.25em) {
 	    .section-content {
-		    max-width: 60em;
+		    max-width: 64em;
 	    }
 	}
 
@@ -741,7 +652,6 @@ input[type="submit"] {
 
 .branding h1 {
 	color: #ffffff;
-	font-family: UnifrakturCook, Georgia, serif;
 	font-size: 3em;
 	margin: 0.5em 0 0 0;
 }
@@ -1276,10 +1186,14 @@ body:before {
 }
 
 .footer-contact .name {
-	font-family: "UnifrakturCook", Georgia, "New Times Roman", serif;
-	font-size: 2em;
+	font-size: 1.25em;
 	font-weight: bold;
 }
+	@media only screen and (min-width: 43.75em) {
+	    .footer-contact .name {
+		    font-size: 2em;
+	    }
+	}
 
 .nav-footer {
 	float: left;
@@ -1361,7 +1275,7 @@ body:before {
 }
 
 .byline {
-	color: #919191;
+	color: #717171;
 	font-size: 0.875em;
 	font-style: italic;
 	margin: 0 auto 1em auto;
@@ -1386,11 +1300,11 @@ body:before {
 blockquote {
 	width: 85%;
 	margin: 0 auto 1em auto; 
-	font-size: 1.5em; 
-	line-height: 1.4em; 
-	font-family: "Alegreya", Georgia, "Times New Roman"; 
-	font-style: italic; 
-	font-weight: bold;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 1.75em;
+	line-height: 1.15;
+	font-family: "essonnes-display"; 
 	position: relative;
 }
 
@@ -1399,7 +1313,7 @@ blockquote:before {
 	font-size: 2em;
 	color: #9f9f9f;
 	position: absolute;
-	top: 0;
+	top: -0.2em;
 	left: -0.5em;
     
 }
@@ -1409,7 +1323,7 @@ blockquote:after {
 	font-size: 2em;
 	color: #9f9f9f;
 	position: relative;
-	bottom: -0.2em;
+	bottom: -0.35em;
 	right: 0; 
 	display: inline;
     line-height: .2em;
@@ -1417,8 +1331,7 @@ blockquote:after {
 	@media screen and (min-width: 43.75em) { 
 		
 		blockquote {
-			font-size: 1.5em; 
-			font-weight: normal;
+      font-size: 2.5em;
 			margin: 0 auto 1em auto; 
 			position: relative;
 			width: 75%;
@@ -1430,7 +1343,6 @@ blockquote:after {
 		
 		blockquote.left, 
 		blockquote.right {
-			font-weight: bold;		
 			width: 50%;
 		}
 		blockquote.left {
@@ -1449,7 +1361,7 @@ blockquote:after {
 		
 		blockquote.left:before, 
 		blockquote.right:before {
-			left: -0.1em;
+			left: -0.35em;
 		    
 		}	
 	}
@@ -1458,17 +1370,18 @@ blockquote:after {
 
 /* Initial Cap styles */
 .article-detail.initial p:first-of-type:first-letter {
-	font-size: 4em; 
-	font-family: "Alegreya", Georgia, "Times New Roman";
-	line-height: 0.9em; 
 	float: left; 
-	padding-right: 0.15em; 
+	padding-right: 0.05em; 
+  font-family: 'essonnes-headline';
+  font-weight: bold;
+	font-size: 3em; 
+	line-height: 0.9em; 
 	
 }
 
 .lt-ie9 .article-detail.initial footer + p:first-letter {
     font-size: 4em; 
-    font-family: "Alegreya", Georgia, "Times New Roman";
+    font-family: "essonnes-headline", Georgia, "Times New Roman";
 	line-height: 0.9em; 
 	float: left; 
 	padding-right: 0.15em; 	
@@ -1476,56 +1389,52 @@ blockquote:after {
 	@media screen and (min-width: 43.75em) { 
 		.article-detail.initial p:first-of-type:first-letter { 
 			font-size: 5em;
+      line-height: 0.825em; 
+      padding-right: 0.05em; 
 		}
 		.lt-ie9 .article-detail.initial footer + p:first-letter { 
 			font-size: 5em;
 		}
 	}
 	
+	@media screen and (min-width: 81.25em) { 
+		.article-detail.initial p:first-of-type:first-letter { 
+			font-size: 5em;
+      line-height: 0.87em; 
+		}
+	}
+	
+/* Section end styles */
+.section-end:after {
+  color: #777;
+	content: "\00a7";
+	display: block;
+	font-family: "essonnes-display";
+	font-size: 1.5em;
+	font-weight: 300;
+	margin-top: 1em;
+	text-align: center;
+}
+
 /* First-line styles */
+.section-end + p:first-line,
 p.first-line:first-line {
-	font-size: 1.1em;
+	font-family: "essonnes-text";
 	font-weight: bold;
+	font-variant: small-caps;
 }
 
-/* stocks container */
-.stocks-container {
-	float: left;
-	margin-right: 1em;
-	width: 6.25em;
-}
-	@media screen and (min-width: 25em) { 
-		.stocks-container {
-			
-		}
-	}
-	@media screen and (min-width: 43.75em) { 
-		.stocks-container {
-			margin-left: -3em;
-		}
-	}
-
-.stocks-stock {
-	border-top: solid 1px #a1a1a1;
-	margin-bottom: 0.75em;
-	padding-top: 0.25em;
-}
-.stocks-name {
-	font-weight: bold;
-}
-.stocks-icon {
-	display: block; 
-	float: left;
-	height: 1em;
-	margin-top: -0.1em;
-	overflow: hidden;
-	width: 1em;
-}
-.stocks-closed {
-	color: #a1a1a1;
-	font-size: 0.875em;
+/* Content end styles */
+.content-area p:last-child:after {
+  color: #777;
+	content: "\2766";
+	display: inline;
+	font-family: "essonnes-display";
+	font-size: 1.25em;
 	font-style: italic;
+	font-weight: 300;
 }
+
 
 /* /content area styles */
 
@@ -1690,6 +1599,13 @@ figure.small {
 	    }
 	}
 
+figure.medium {
+	width: 50%;
+	-webkit-transition: width linear 0.2s;
+	-moz-transition: width linear 0.2s;
+    transition: width linear 0.2s;
+
+}
 figure.circle {
 	-webkit-shape-outside: circle();
     shape-outside: circle();
@@ -1731,6 +1647,7 @@ figure.right.hang-50 {
 
 figcaption {
 	color: #a1a1a1;
+	line-height: 1.25;
 }
   @media (min-width: 43.75em) {
     figcaption.right-side {

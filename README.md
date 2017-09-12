@@ -1,9 +1,9 @@
 # RWT-Workshop
 
 This is the code for my Responsive Typography workshop. You can usually also find this available online for preview:
-http://rwt.io/rwt-workshop/html/index_final.html
-http://rwt.io/rwt-workshop/html/good_typography.html
-http://rwt.io/rwt-workshop/html/varfonts.html
+- http://rwt.io/rwt-workshop/html/index_final.html
+- http://rwt.io/rwt-workshop/html/good_typography.html
+- http://rwt.io/rwt-workshop/html/varfonts.html
 
 # Now with variable font demo!
 

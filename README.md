@@ -5,11 +5,11 @@ This is the code for my Responsive Typography workshop. You can usually also fin
 - http://rwt.io/rwt-workshop/html/good_typography.html
 - http://rwt.io/rwt-workshop/html/varfonts.html
 
-# Now with variable font demo!
+## Variable font demo!
 
-Get and/or configure 
+- Get and/or configure your browser as outlined below
 
-Check out 'html/varfonts.html' and 'css/varfonts.css' to see how it all comes together. This is using Gingham and Amstelvar, two open-source projects that provide a good starting point.
+- Check out 'html/varfonts.html' and 'css/varfonts.css' to see how it all comes together. This is using Gingham and Amstelvar, two open-source projects that provide a good starting point.
 
 ## Resources
 
